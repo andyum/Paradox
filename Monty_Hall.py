@@ -6,9 +6,9 @@ unstable = 0  # счетчик выигрышей переменчивого и�
 for i in range(1000):
     shuffle(doors)  # перемешиваем массив doors
     f = randint(0, 2)  # генерируем выбор двери
-    stubborn += doors[f]
+    stubborn += doors[f]  # +1 упертому
     if doors[f] == 0:
-        unstable += 1
+        unstable += 1  # +1 переменчивому
 
 print('Stubborn:', stubborn)
 print('Unstable:', unstable)
